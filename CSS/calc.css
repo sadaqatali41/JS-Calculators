@@ -1,0 +1,98 @@
+h1{
+	background-color:wheat;
+	margin-top:10px;
+	border:6px groove #44D7A8;
+	border-radius:10px;
+}
+.main{
+	height:620px;
+	width:670px;
+	background-image:url(../images/calc2.jpg);
+	margin-left:350px;
+	margin-top:20px;
+	border:5px solid orange;
+	border-radius:20px;
+}
+p{
+	color:green;
+	text-align:center;
+	font-size:32px;
+	font-family:Times New Roman;
+	font-style:italic;
+	font-weight:bold;
+	text-decoration:underline;
+	background-color:yellow;
+	border:5px solid grey;
+	border-radius:10px;
+}
+table{
+	margin-top:0px; 
+	text-align:center;
+	border:4px solid #FFF600;
+	border-radius:10px;
+	height:460px;
+	background-color:purple;
+}
+input[type=button]{
+	height:60px;
+	width:60px;
+	font-weight:bold;
+	font-family:Times New Roman;
+	font-size:14px;
+	float:left;
+	cursor:pointer;
+}
+input[name=input]{
+	height:45px;
+	width:410px;
+	margin-top:-30px;
+	border:3px solid blue;
+	border-radius:10px;
+	padding-left:10px;
+	background-color:pink;
+	font-style:italic;
+	font-weight:bold;
+	color:blue;
+}
+#clear{
+	background-color:red;
+}
+#result{
+	background-color:cyan;
+}
+#dot{
+	color:#008000;
+	background-color:#CAE00D;
+}
+.number{
+	color:purple;
+	background-color:#FF9966;
+}
+.arith{
+	color:#CAE00D;
+	background-color:#318CE7;
+}
+.trig{
+	color:#0000FF;
+	background-color:#B5A642;
+}
+.exp{
+	color:#004225;
+	background-color:#FF007F;
+}
+.log{
+	color:magenta;
+	background-color:#ACE1AF;
+}
+.pow{
+	color:#E03C31;
+	background-color:#7FFF00;
+}
+.root{
+	color:white;
+	background-color:#002E63;
+}
+.common{
+	color:white;
+	background-color:#3D2B1F;
+}

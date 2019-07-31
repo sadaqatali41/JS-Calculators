@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" type="text/CSS" href="CSS/calculator.css">
+	<script src="javaScript/calculator.js"></script>
+</head>
+<body>
+	<div id=main>
+		<form name="calculator" method="post">
+			<table align="center" id="tab1">
+				<tr><th>Calculator<br/></th></tr>
+				<tr><td><label for="number1" class="n1">Enter First Number:</label>&nbsp;<input type="text" name="value1" id="value1" placeholder="First Number"></td></tr>
+				<tr><td><label for="number2" class="n2">Enter Second Number:</label>&nbsp;<input type="text" name="value2" id="value2" placeholder="Second Number"></td></tr>
+				<tr><td><label for="number3" class="n3">Single Operations:</label>&nbsp;<input type="text" name="value3" id="value3" placeholder="Single Operations"></td></tr>
+				<tr><td><label for="result" class="rs">Result is:</label>&nbsp;<input type="text" name="result" id="result" placeholder="For Results"></td></tr>
+			</table>
+			<table align="center" id="tab2" cellpadding="auto" cellspacing="auto">
+				<tr>
+					<th><input type="button" class="b13 common" value="SIN( )" onclick="sinfunction()"></th>
+					<th><input type="button" class="b1 common" value="ADD" onclick="addition()"></th>
+					<th><input type="button" class="b2 common" value="SUB" onclick="substraction()"></th>
+					<th><input type="button" class="b9 common" value="SQR" onclick="square()"></th>
+					<th><input type="button" class="b20 common" value="LOGE" onclick="logbaseE()"></th>
+				</tr>
+				 
+				<tr>
+					<th><input type="button" class="b14 common" value="COS( )" onclick="cosfunction()"></th>
+					<th><input type="button" class="b3 common" value="MUL" onclick="multiplication()"></th>
+					<th><input type="button" class="b4 common" value="DIV" onclick="division()"></th>
+					<th><input type="button" class="b10 common" value="CUB" onclick="cube()"></th>
+					<th><input type="button" class="b19 common" value="LOG2" onclick="logbase2()"></th>
+				</tr>
+				
+				<tr>
+					<th><input type="button" class="b15 common" value="TAN( )" onclick="tanfunction()"></th>
+					<th><input type="button" class="b5 common" value="GRT" onclick="greatest()"></th>
+					<th><input type="button" class="b6 common" value="LST" onclick="least()"></th>
+					<th><input type="button" class="b11 common" value="SQRT" onclick="sqroot()"></th>
+					<th><input type="button" class="b18 common" value="LOG10" onclick="logbase10()"></th>
+				</tr>
+				<tr>
+					<th><input type="button" class="b16 common" value="EXPO" onclick="exponential()"></th>
+					<th><input type="button" class="b7 common" value="MOD" onclick="modulous()"></th>
+					<th><input type="reset" class="b8 common" value="CLR"></th>
+					<th><input type="button" class="b12 common" value="CBRT" onclick="cuberoot()"></th>
+					<th><input type="button" class="b17 common" value="POWR" onclick="power()"></th>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

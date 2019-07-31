@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" type="text/CSS" href="CSS/calc.css">
+	<script src="javaScript/calc.js"></script>
+</head>
+<body bgcolor="#C19A6B">
+<div class="main">
+					<p>Simple Calculator</p>
+	<table align="center">
+		<form name="calc">
+		<tr>
+			<th><h1>Simple Calculator</h1></th>
+		</tr>
+		<tr>
+			<th><input type="text" name="input" placeholder="Enter Input Value"></th>
+		</tr>
+		<tr>
+			<td> 
+				<input type="button" value=" ( " class="common" onclick="document.calc.input.value += '('">
+				<input type="button" value=" CLR " id="clear" onclick="document.calc.input.value = ''">
+				<input type="button" value=" SQR " class="root" onclick="document.calc.input.value =Math.pow(input.value,2)">
+				<input type="button" value=" SQRT " class="root" id="sqrt" onclick="squareroot()">
+				<input type="button" value=" CUB " class="root" onclick="document.calc.input.value =Math.pow(input.value,3)">
+				<input type="button" value=" CBRT " class="root" id="cbrt" onclick="document.calc.input.value =Math.cbrt(input.value)">
+				<input type="button" value=" X^X " class="pow"  onclick="document.calc.input.value =Math.pow(input.value,input.value)">
+				<br/>
+				<input type="button" value=" ) " class="common" onclick="document.calc.input.value += ')'">
+				<input type="button" value=" 1 " class="number" onclick="document.calc.input.value += '1'">
+				<input type="button" value=" 2 " class="number" onclick="document.calc.input.value += '2'">
+				<input type="button" value=" 3 " class="number" onclick="document.calc.input.value += '3'">
+				<input type="button" value=" + " class="arith" onclick="document.calc.input.value += '+'">
+				<input type="button" value=" % " class="arith" onclick="document.calc.input.value += '%'">
+				<input type="button" value=" EXP " class="exp" onclick="document.calc.input.value = Math.exp(input.value)">
+				<br/>
+				<input type="button" value=" PI " class="common" onclick="document.calc.input.value =(input.value)*Math.PI ">
+				<input type="button" value=" 4 " class="number" onclick="document.calc.input.value += '4'">
+				<input type="button" value=" 5 " class="number" onclick="document.calc.input.value += '5'">
+				<input type="button" value=" 6 " class="number" onclick="document.calc.input.value += '6'">
+				<input type="button" value=" - " class="arith" onclick="document.calc.input.value += '-'">
+				<input type="button" value=" SIN " class="trig" onclick="document.calc.input.value =Math.sin(input.value)">
+				<input type="button" value=" LOG2 " class="log" onclick="logbase2()">
+				<br/>
+				<input type="button" value=" ABS " class="common" onclick="document.calc.input.value =Math.abs(input.value)">
+				<input type="button" value=" 7 " class="number" onclick="document.calc.input.value += '7'">
+				<input type="button" value=" 8 " class="number" onclick="document.calc.input.value += '8'">
+				<input type="button" value=" 9 " class="number" onclick="document.calc.input.value += '9'">
+				<input type="button" value=" X " class="arith" onclick="document.calc.input.value += '*'">
+				<input type="button" value=" COS " class="trig" onclick="document.calc.input.value =Math.cos(input.value)">
+				<input type="button" value=" LOG10 " class="log" onclick="logbase10()">
+				<br/>
+				<input type="button" value=" POW " class="common" onclick="power()">
+				<input type="button" value=" &bull; " id="dot" onclick="document.calc.input.value += '.'">
+				<input type="button" value=" 0 " class="number" onclick="document.calc.input.value += '0'">
+				<input type="button" value=" = " id="result" onclick="document.calc.input.value=eval(document.calc.input.value)">
+				<input type="button" value=" / " class="arith" onclick="document.calc.input.value += '/'">
+				<input type="button" value=" TAN " class="trig" onclick="document.calc.input.value =Math.tan(input.value)">
+				<input type="button" value=" LOGE " class="log" onclick="logbaseE()">
+			</td>	
+		</tr>
+		</form>
+	</table>
+</div>
+</body>
+</html>
